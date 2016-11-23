@@ -1,0 +1,267 @@
+@import content/po-edit
+@import content/event
+@import content/news
+@import content/news-full
+@import content/main
+@import content/contact
+@import content/gallery
+@import content/calc
+@import content/eror
+@import content/registration
+@import content/organization
+@import content/edit-distans
+@import content/edit-event
+@import content/event-result
+
+// ava-menu
+.ava-menu
+	margin-top: 105px
+	margin-bottom: 40px
+	.ava 
+		background: #fff
+		padding: 15px 22px 20px 220px
+		box-sizing: border-box
+		position: relative
+		.ava-img
+			background: #fff
+			position: absolute
+			width: 158px
+			height: 158px
+			padding: 4px
+			box-sizing: border-box
+			left: 33px
+			top: -79px
+	.name-position
+		display: inline-block
+		min-width: 275px
+		padding-right: 20px
+		box-sizing: border-box
+		border-right: 1px solid #ecedef
+		padding: 13px 0 9px
+	.name
+		font-size: 17px
+		color: #30426b
+		line-height: 20px
+	.position
+		padding-top: 9px
+		font-size: 15px
+		color: #9299a6
+		line-height: 20px
+	.city-mail
+		display: inline-block
+		min-width: 275px
+		padding-left: 40px
+		box-sizing: border-box
+	.city
+		color: #2a344a
+		font-size: 16px
+		line-height: 20px
+		
+	.menu 
+		background: #30426b
+		font-size: 0
+		line-height: 0
+		li 
+			display: inline-block			
+		a 
+			color: #f8f9fb
+			font-size: 15px
+			display: inline-block
+			line-height: 20px
+			padding: 23px 30px 20px
+			&:hover
+				background: #d62738
+			&.active
+				background: #d62738
+.socials
+	float: right
+	margin-top: 34px
+	a 
+		width: 30px
+		height: 30px
+		display: inline-block
+		margin: 0 8px
+		text-align: center
+		border-radius: 100%
+		&:before
+			display: inline-block
+			vertical-align: middle
+			color: #fff 
+			font-size: 16px
+		&:after
+			content: ""
+			display: inline-block
+			vertical-align: middle
+			height: 100%
+			width: 0
+	.facebook
+		background: #3a5897
+		&:hover
+			background: #1847a9
+		&:before
+			+font-icon("facebook")
+	.twitter
+		background: #25a6d1
+		&:hover
+			background: #16708e
+		&:before
+			+font-icon("twitter")
+	.google
+		background: #dd4a39
+		&:hover
+			background: #b92312
+		&:before
+			+font-icon("google-plus")
+	.vk
+		background: #4d76a0
+		&:hover
+			background: #1e71c6
+		&:before
+			+font-icon("vk")
+// ava-menu
+
+// next-races
+.next-races
+	// font-size: 0
+	// line-height: 0
+	margin-bottom: 180px
+.next-races-container
+	background: #fff
+	padding-bottom: 40px
+	clear: both
+.next-races-item
+	+pie-clearfix
+	position: relative
+	margin-bottom: 45px
+	+box-shadow(0px 9px 21px -5px rgba(0,0,0,0.1))
+	min-height: 210px
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
+	flex-direction: row
+	-ms-flex-wrap: nowrap
+	flex-wrap: nowrap
+	-webkit-box-pack: start
+	-ms-flex-pack: start
+	justify-content: flex-start
+	-webkit-box-align: strench
+	-ms-flex-align: strench
+	text-decoration: none
+	align-items: strench
+	width: 100%
+	.left
+		padding-bottom: 65px
+		background: #ffffff
+		box-sizing: border-box
+		width: 280px
+		position: relative
+		text-align: center
+		&:after
+			content: ""
+			display: inline-block
+			vertical-align: middle
+			height: 100%
+			width: 0
+		.logo
+			display: inline-block
+			vertical-align: middle
+		.socials
+			position: absolute
+			right: 0
+			left: 0
+			z-index: 12
+			margin-top: 0
+			bottom: 30px
+			a
+				width: 25px
+				height: 25px
+				&:before
+					font-size: 14px
+	.right
+		// position: relative
+		// float: right
+		width: 900px
+		background: #fdfeff
+		+box-sizing(border-box)
+		padding: 40px 40px 20px
+		.text
+			position: relative
+			font-size: 14px
+			line-height: 24px
+			color: #3a4253
+			clear: both
+			margin: 35px 0px
+			letter-spacing: 0.04em
+			text-align: left
+		.more
+			position: absolute
+			right: 0
+			bottom: -67px
+			display: block
+			width: 200px
+			text-align: center
+			font-size: 14px
+			line-height: 16px
+			color: #ffffff
+			background: #d62738
+			padding: 12px 20px 10px
+			border-radius: 5px
+			letter-spacing: 0.04em
+			&:hover
+				background: #c41022
+		.title
+			font-size: 18px
+			line-height: 22px
+			color: #31446b
+			font-weight: 600
+			float: left
+		.date-city-peaple
+			font-size: 13px
+			color: #818896
+			float: right
+			p
+				display: inline-block
+				border-left: 1px solid rgba(#9fa4ae, 0.35)
+				padding-left: 20px
+				margin-right: 15px
+				color: #818896
+				font-size: 13px
+				line-height: 16px
+				&:first-child
+					border: none
+				&:before
+					display: inline-block
+					margin-right: 10px
+					line-height: 16px
+					font-size: 14px
+					vertical-align: baseline
+					color: #9fa4ae
+		.date
+			&:before
+				+font-icon("time")
+		.city
+			&:before
+				+font-icon("pin")
+		.peaple
+			&:before
+				+font-icon("shape")
+	.marathon
+		max-width: 550px
+		p 
+			color: #30426b
+			background: #e5e9f0
+			font-size: 12px
+			line-height: 14px
+			padding: 7px 20px 6px
+			display: inline-block
+			border-radius: 5px
+			margin-right: 10px
+			+transition(0.3s)
+			margin-bottom: 10px
+			&:hover
+				color: #ffffff
+				background: #546894
+// next-races

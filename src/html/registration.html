@@ -1,0 +1,103 @@
+//= partials/head.html
+//= partials/header.html
+		<section class="pages">
+			<div class="wrapper">
+				<div class="">
+					<a href="#" class="home"><span><img src="../img/home.png" alt=""></span></a>
+					<a href="#"><span>Регистрация</span></a>
+				</div>
+			</div>
+		</section>
+		<section class="registration">
+			<div class="wrapper">
+				<h3>Регистрация пользователя</h3>
+				<div class="registration-content">
+					<label><span class="reg-title">Имя - Фамилия:</span><input type="text"></label>
+					<label><span class="reg-title">Электронная почта:</span><input type="email"></label>
+					<label><span class="reg-title">Пароль:</span><input type="password"></label>
+					<label><span class="reg-title">Повторите пароль:</span><input type="password"></label>
+					<label for=""><span class="reg-title">Пол:</span>
+						<div class="gender">
+							<label for="1"><input type="radio" name="gender" value="Мужской" id="1"><span><p>Мужской</p></span></label>
+							<label for="2"><input type="radio" name="gender" value="Женский" id="2"><span><p>Женский</p></span></label>
+						</div>
+					</label>
+					<label for=""><span class="reg-title">Дата рождения:</span>
+						<div class="po-edit-date">
+							<div class="day select">
+								<div class="arrow"></div>
+								<select name="daybirdthay">
+									<option value="1" selected="">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>									
+								</select>
+							</div>
+							<div class="month select">
+								<div class="arrow"></div>
+								<select name="monthbirdthay">								
+									<option value="6">Червня</option>
+									<option value="7">Липня</option>
+									<option value="8" selected="">Серпня</option>
+									<option value="9">Вересня</option>								
+								</select>
+							</div>
+							<div class="year select">
+								<div class="arrow"></div>
+								<select name="yearbirdthay">							
+									<option value="1994">1994</option>
+									<option value="1995">1995</option>
+									<option value="1996">1996</option>
+									<option value="1997">1997</option>
+									<option value="1998" selected="">1998</option>
+									<option value="1999">1999</option>
+									<option value="2000">2000</option>							
+								</select>
+							</div>
+						</div>
+					</label>
+					<label for=""><span class="reg-title">Страна - Город:</span>
+						<div class="select country">
+							<div class="arrow"></div>
+							<select name="" id="">
+								<option value="">Украина</option>
+								<option value="">Москва</option>
+							</select>
+						</div>
+						<input type="text" placeholder="Город" class="country-city">
+					</label>
+					<label for=""><span class="reg-title">Номер телефона:</span>
+						<div class="telephone">
+							<select name="" id="" class="phone">
+								<option value="">+38</option>
+								<option value="">+7</option>
+							</select>
+							<input type="tel" placeholder="093 432 32 33">
+						</div>
+					</label>
+					<label for=""><span class="reg-title">Тип аккаунта:</span>
+						<div class="gender">
+							<label for="3"><input type="radio" name="gender" value="Мужской" id="3"><span><p>Участник</p></span></label>
+							<label for="4"><input type="radio" name="gender" value="Женский" id="4"><span><p>Организатор</p></span></label>
+						</div>
+					</label>
+					<label for=""><span class="reg-title">Организация:</span><input type="text"></label>
+					<label for=""><span class="reg-title">Клуб - Футболка:</span>
+						<input type="text" class="club">
+						<div class="size select">
+							<div class="arrow"></div>
+							<select name="" id="">
+								<option value="XS">XS</option>
+								<option value="XL">XL</option>
+								<option value="X">X</option>
+							</select>
+						</div>
+					</label>
+				</div>
+				<div class="condition">
+					<label class="check"><input type="checkbox"><div class="checkbox"></div><span>Я принимаю условия соглашения</span></label>
+					<input type="submit" value="Создать аккаунт">
+				</div>
+			</div>
+		</section>
+//= partials/footer.html

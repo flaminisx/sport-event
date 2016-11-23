@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Base</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/screen.css" />
+	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+	<script type="text/javascript" src="../js/vendor.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<!-- <link rel="shortcut icon" href="{THEME}/img/favicon.ico" type="image/x-icon"> -->
+    <!-- <link rel="icon" href="{THEME}/img/favicon.ico" type="image/x-icon"> -->
+    <bgsound src="../audio/proba.mp3" loop="1" volume="0" balance="0"></bgsound>
+</head>
+<body>
+	<div class="global-wrapper">
+<header id="header">
+	<div class="wrapper">
+		<a href="#" class="logo"><img src="../img/logo.png" alt=""></a>
+		<nav class="header-menu">
+			<ul>
+				<li><a href="#" class="home"></a></li>
+				<li><a href="#">мероприятия</a></li>       
+				<li><a href="#">галерея</a></li>       
+				<li><a href="#">Новости</a></li>       
+				<li><a href="#">калькулятор</a></li>
+				<li><a href="#">результаты</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<a href="#" class="enter">Войти</a>
+	</div>
+</header>
+		<section class="ava-menu">
+			<div class="wrapper">
+				<div class="ava">
+					<div class="ava-img"><img src="../img/ava.jpg" alt=""></div>
+					<div class="name-position">
+						<p class="name">Александра Смолинская</p>
+						<p class="position">TopRunners</p>
+					</div>
+					<div class="city-mail">
+						<p class="city">Киев</p>
+						<p class="mail position">alex.andra@gmail.com</p>
+					</div>
+					<div class="socials">
+						<a href="#" class="facebook"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="google"></a>
+						<a href="#" class="vk"></a>
+					</div>
+				</div>
+				<div class="menu">					
+					<li><a href="#">Мои забеги</a></li>             
+					<li><a href="#">Редактировать</a></li>             
+					<li><a href="#">Ближайшие забеги</a></li>             
+					<li><a href="#">Моя команда</a></li>             
+					<li><a href="#">Организатор</a></li>
+				</div>
+			</div>
+		</section>
+		<section class="po-edit">
+			<div class="wrapper">
+				<form action="#">
+					<div class="po-edit-l">
+						<div class="left">
+							<h4>Личная информация</h4>
+							<input type="text" placeholder="ФИО">
+							<div class="po-edit-date">
+								<div class="day select">
+									<div class="arrow"></div>
+									<select name="daybirdthay">
+										<option value="1" selected="">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>									
+									</select>
+								</div>
+								<div class="month select">
+									<div class="arrow"></div>
+									<select name="monthbirdthay">								
+										<option value="6">Червня</option>
+										<option value="7">Липня</option>
+										<option value="8" selected="">Серпня</option>
+										<option value="9">Вересня</option>								
+									</select>
+								</div>
+								<div class="year select">
+									<div class="arrow"></div>
+									<select name="yearbirdthay">							
+										<option value="1994">1994</option>
+										<option value="1995">1995</option>
+										<option value="1996">1996</option>
+										<option value="1997">1997</option>
+										<option value="1998" selected="">1998</option>
+										<option value="1999">1999</option>
+										<option value="2000">2000</option>							
+									</select>
+								</div>
+							</div>
+							<div class="size select">
+								<div class="arrow"></div>
+								<select name="" id="">
+									<option value="XS">XS</option>
+									<option value="XL">XL</option>
+									<option value="X">X</option>
+								</select>
+							</div>
+							<div class="gender">
+								<label for="1"><input type="radio" name="gender" value="Мужской" id="1"><span></span>Мужской</label>
+								<label for="2"><input type="radio" name="gender" value="Женский" id="2"><span></span>Женский</label>
+							</div>
+						</div>
+						<div class="right">
+							<h4>Контактная информация</h4>
+							<div class="select country">
+								<div class="arrow"></div>
+								<select name="" id="">
+									<option value="">Украина</option>
+									<option value="">Москва</option>
+								</select>
+							</div>
+							<input type="text" placeholder="Киев" class="city">
+							<div class="telephone">
+								<select name="" id="" class="phone">
+									<option value="">+38</option>
+									<option value="">+7</option>
+								</select>
+								<input type="tel" placeholder="093 432 32 33">
+							</div>
+							<input type="email" placeholder="Email">
+							<input type="submit" value="Сохранить">
+						</div>
+					</div>
+					<div class="po-edit-r">
+						<h4>Сменить пароль</h4>
+						<input type="password" placeholder="Старый пароль">
+						<input type="password" placeholder="Новый пароль">
+						<input type="password" placeholder="Повторите новый пароль">
+						<input type="submit" value="Сменить пароль">
+					</div>
+				</form>
+			</div>
+		</section>
+	<footer id="footer">
+		<div class="wrapper">
+			<p class="create">Разработка сайта <a href="#">OneHub</a></p>
+			<p class="copy">&copy;2016  Агенство спортивных мероприятий «SportEvent»</p>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

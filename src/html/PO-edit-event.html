@@ -1,0 +1,77 @@
+//= partials/head.html
+//= partials/header.html
+		<section class="ava-menu">
+			<div class="wrapper">
+				<div class="ava">
+					<div class="ava-img"><img src="../img/ava.jpg" alt=""></div>
+					<div class="name-position">
+						<p class="name">Александра Смолинская</p>
+						<p class="position">TopRunners</p>
+					</div>
+					<div class="city-mail">
+						<p class="city">Киев</p>
+						<p class="mail position">alex.andra@gmail.com</p>
+					</div>
+					<div class="socials">
+						<a href="#" class="facebook"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="google"></a>
+						<a href="#" class="vk"></a>
+					</div>
+				</div>
+				<div class="menu">					
+					<li><a href="#">Мои забеги</a></li>             
+					<li><a href="#">Редактировать</a></li>             
+					<li><a href="#" class="active">Ближайшие забеги</a></li>             
+					<li><a href="#">Моя команда</a></li>             
+					<li><a href="#">Организатор</a></li>
+				</div>
+			</div>
+		</section>
+		<section class="edit-event">
+			<div class="wrapper">
+				<div class="edit-event-container">
+					<div class="edit-event-container-l">
+						<h3 style="padding-left: 0;">Редактирование мероприятия</h3>
+						<label class="l0"><span class="reg-title">Название мероприятия</span><input type="text"></label>
+						<label class="l1"><span class="reg-title">Город проведения</span><input type="text"></label>
+						<label class="l2"><span class="reg-title">Дата проведения</span><input type="text" data-rel="date" placeholder="01.01.16"></label>
+						<label class="l1"><span class="reg-title">Ссылка на сайт</span><input type="text"></label>
+						<label class="l2">
+							<div class="gender">
+								<p class="reg-title">Чиповая cистема AE</p>
+								<label><input type="radio" name="gender3" value="Мужской"><span><p>Есть</p></span></label>
+								<label><input type="radio" name="gender3" value="Женский"><span><p>Нет</p></span></label>
+							</div>
+						</label>
+						<div class="img-load">
+							<span class="reg-title">Логотип события</span>
+							<div class="img-load-container"></div>
+							<label>Загрузить изображение<input type="file"></label>
+							<p><img src="../img/download.png" alt="">small_9963d00bf3d.png</p>
+							<a href="#">Удалить логотип</a>
+						</div>
+
+						<label class="l0"><span class="reg-title">Вид мероприятия</span><input type="text"></label>
+						<label class="l0"><span class="reg-title">Описание</span><textarea name="" id="" cols="30" rows="10"></textarea></label>
+						<input type="submit" value="Сохранить">
+					</div>
+					<div class="edit-event-container-r">
+						<h3>Дистанции</h3>
+						<a href="#" class="add-distans">Добавить дистанцию</a>
+						<div>
+							<input type="text" placeholder="Дистанция">
+							<a href="" class="edit-event-reg">Редактировать</a>
+							<a href="" class="edit-event-delete">Удалить</a>
+						</div>
+						<div>
+							<input type="text" placeholder="Дистанция">
+							<a href="" class="edit-event-reg">Редактировать</a>
+							<a href="" class="edit-event-delete">Удалить</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+//= partials/footer.html

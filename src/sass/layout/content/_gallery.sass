@@ -1,0 +1,65 @@
+.gallery
+	.news-item
+		&:hover
+			.camera
+				+opacity(0)
+	.news-item-text
+		height: 105px
+		padding: 20px 30px 18px
+	.date 
+		margin-bottom: 8px
+	.news-item-title
+		white-space: pre-wrap
+		height: 40px
+		overflow: hidden
+	.news-item-img
+		.plus
+			&:before
+				+font-icon("eye")
+	.camera
+		position: absolute
+		bottom: 20px
+		left: 34px
+		+opacity(1)
+		transition: 0.3s
+		img 
+			display: inline-block
+			margin-right: 15px
+			width: auto
+	// .video
+	// 	position: absolute
+	// 	bottom: 20px
+	// 	left: 74px
+
+.gallery-back
+	display: block
+	color: #d62738
+	font-size: 15px
+	padding-left: 33px
+	margin-top: 15px
+	img 
+		margin-right: 10px
+
+.gallery-full-item
+	float: left
+	margin-left: 20/1200*100%
+	width: 380/1200*100%
+	height: 270px
+	position: relative
+	box-sizing: border-box
+	margin-bottom: 20px
+	.gallery-full-item-img
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		img 
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.video
+		position: absolute
+		left: 10px
+		top: 10px
+		z-index: 1

@@ -1,0 +1,105 @@
+//= partials/head.html
+//= partials/header.html
+		<section class="ava-menu">
+			<div class="wrapper">
+				<div class="ava">
+					<div class="ava-img"><img src="../img/ava.jpg" alt=""></div>
+					<div class="name-position">
+						<p class="name">Александра Смолинская</p>
+						<p class="position">TopRunners</p>
+					</div>
+					<div class="city-mail">
+						<p class="city">Киев</p>
+						<p class="mail position">alex.andra@gmail.com</p>
+					</div>
+					<div class="socials">
+						<a href="#" class="facebook"></a>
+						<a href="#" class="twitter"></a>
+						<a href="#" class="google"></a>
+						<a href="#" class="vk"></a>
+					</div>
+				</div>
+				<div class="menu">					
+					<li><a href="#">Мои забеги</a></li>             
+					<li><a href="#">Редактировать</a></li>             
+					<li><a href="#" class="active">Ближайшие забеги</a></li>             
+					<li><a href="#">Моя команда</a></li>             
+					<li><a href="#">Организатор</a></li>
+				</div>
+			</div>
+		</section>
+		<section class="edit-distans">
+			<div class="wrapper">
+				<a href="#" class="back-to-edit"><img src="../img/arrow-back.png" alt="">К редактированию мероприятия</a>
+				<div class="edit-distans-container">
+					<div>
+						<h3>Редактирование дистанции</h3>
+						<label class="l1"><span class="reg-title">Выбор мероприятия</span>
+							<div class="select country">
+								<div class="arrow"></div>
+								<select name="" id="">
+									<option value="">Украина</option>
+									<option value="">Москва</option>
+								</select>
+							</div>
+						</label>
+						<label class="l2"><span class="reg-title">Название дистанции</span><input type="text"></label>
+					</div>
+					<div>
+						<label class="l3"><span class="reg-title">Описание</span><textarea name="" id="" cols="30" rows="10"></textarea></label>						
+					</div>
+					<div>
+						<label class="l4"><span class="reg-title">Дистанция (КМ)</span><input type="number"></label>
+						<label class="l4"><span class="reg-title">Лимит участников</span><input type="number"></label>
+						<label class="l5"><span class="reg-title">Диапазон номеров</span><input type="number"><p>&mdash;</p><input type="number"></label>
+					</div>
+					<div class="filter-date">
+		                <label class="l6"><span class="reg-title">Дата проведения</span><input type="text" data-rel="date" placeholder="01.01.16" id="date1"></label>
+		                <label class="l6"><span class="reg-title">Начало регистрации</span><input type="text" data-rel="date" placeholder="31.12.16" id="date2"></label>
+		                <label class="l6"><span class="reg-title">Конец регистрации</span><input type="text" data-rel="date" placeholder="31.12.16" id="date2"></label>
+		            </div>
+		            <div class="border-n">
+		            	<label for="" class="l7"><span class="reg-title">Тип аккаунта:</span>
+							<div class="gender">
+								<label><input type="radio" name="gender" value="Мужской"><span><p>от дня мероприятия</p></span></label>
+								<label><input type="radio" name="gender" value="Женский"><span><p>до 31 декабря</p></span></label>
+							</div>
+						</label>
+						<label for="" class="l7"><span class="reg-title">Тип аккаунта:</span>
+							<div class="gender">
+								<label><input type="radio" name="gender2" value="Мужской"><span><p>Марафон</p></span></label>
+								<label><input type="radio" name="gender2" value="Женский"><span><p>Эстафета</p></span></label>
+							</div>
+						</label>
+		            </div>
+		            <div class="distans-last">
+		            	<label class="l8"><span class="reg-title">Цена</span><input type="number"></label>
+		                <label class="l9">До даты<input type="text" data-rel="date" placeholder="01.01.16" id="date1"></label>
+		                <br><a href="#"><img src="../img/plus.png" alt="">Добавить еще</a>
+		            </div>
+		            <div class="distans-last">
+		            	<label class="l10"><span class="reg-title">Возраст</span>
+							<div class="select country">
+								<div class="arrow"></div>
+								<select name="" id="">
+									<option value="">все</option>
+									<option value="">все</option>
+								</select>
+							</div>
+						</label>
+						<label class="l5"><span class="reg-title">Диапазон возраста</span><input type="number"><p>&mdash;</p><input type="number"></label>
+						<label class="l11"><span class="reg-title">Название группы</span><input type="text"></label>
+						<br><a href="#"><img src="../img/plus.png" alt="">Добавить еще</a>
+						<a href="#"><img src="../img/plus.png" alt="">Добавить группу</a>
+		            </div>
+		            <div class="distans-last">
+		            	<h4>Дополнительные опции</h4>
+						<label class="l12"><span class="reg-title">Название</span><input type="text"></label>
+						<label class="l13"><span class="reg-title">Стоимость</span><input type="number"></label>
+						<br><a href="#"><img src="../img/plus.png" alt="">Добавить еще</a>
+						<input type="submit" value="Сохранить">
+		            </div>
+				</div>
+			</div>
+		</section>
+//= partials/footer.html

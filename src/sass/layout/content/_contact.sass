@@ -1,0 +1,122 @@
+.contact 
+	h3 
+		font-size: 30px
+		color: #31446b
+		display: block
+		padding: 40px 33px 30px
+	.map
+		width: 100%
+		display: block
+		height: 500px
+		iframe 
+			height: 500px
+			width: 100%
+.contact-information
+	margin-top: -160px
+	input, select, textarea
+		font-size: 15px
+		width: 100%
+		display: block
+		color: #a3aaba
+		line-height: 16px
+		background-color: #eff3f9
+		+transition(0.3s)
+		height: 45px
+		border: none
+		border-radius: 5px
+		padding: 10px 20px
+		box-sizing: border-box
+		margin-bottom: 10px
+		// margin-right: 20px
+		// width: 250px
+		float: left
+		+placeholder
+			font-size: 15px
+			color: #a3aaba
+			line-height: 16px
+			+transition(0.3s)
+		&:focus
+			background-color: #e5e8ed
+			+placeholder
+				+opacity(0)
+	textarea
+		resize: none
+		font-family: $os
+		min-height: 110px
+	input[type='submit']
+		background: #d62738
+		color: #ffffff
+		font-size: 16px
+		line-height: 16px
+		cursor: pointer
+		height: 45px
+		width: 100%
+		border-radius: 5px
+		border: none
+		+transition(0.3s)
+		&:hover
+			background: #ce1b2c
+	.phone
+		width: 105px
+		margin-right: 10px
+		&+input
+			width: 255px
+
+.contact-information-item
+	+pie-clearfix
+	width: 950px
+	display: block
+	margin: 0px auto 100px
+	h4 
+		font-size: 24px
+		color: #30426b
+		line-height: 26px
+		display: block
+		color: #30426b
+		margin-bottom: 35px
+	h5 
+		font-weight: bold
+		font-size: 18px
+		line-height: 20px
+		color: #1f2d4b
+		margin-bottom: 10px
+		display: block
+	p 
+		font-size: 16px
+		color: #1f2d4b
+		line-height: 18px
+		display: block
+.contact-information-item-l
+	float: left
+	width: 470px
+	background: #fff
+	box-sizing: border-box
+	padding: 45px 55px 35px
+	min-height: 471px
+	&>div
+		padding: 10px 15px 10px 45px
+		box-sizing: border-box
+		position: relative
+		margin-bottom: 16px
+		&:before
+			display: inline-block
+			font-size: 20px
+			position: absolute
+			left: 10px
+			top: 10px
+	.contact-adress
+		&:before
+			+font-icon("pin")
+	.contact-phone
+		&:before
+			+font-icon("phone")
+	.contact-mail
+		&:before
+			+font-icon("mail")
+.contact-information-item-r
+	float: right
+	width: 480px
+	background: #f9fcff
+	box-sizing: border-box
+	padding: 45px 55px 35px
+	

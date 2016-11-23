@@ -1,0 +1,169 @@
+// .registration
+.registration
+	margin-bottom: 60px
+	h3
+		display: block
+		text-align: center
+		margin-bottom: 50px
+		margin-top: 70px
+		font-size: 30px
+		color: #31446b
+		letter-spacing: 0.04em
+	label
+		display: block
+		+pie-clearfix
+		margin-bottom: 30px
+	.reg-title
+		width: 240px
+		display: inline-block
+		vertical-align: middle
+		font-size: 14px
+		line-height: 14px
+		color: #000
+		font-weight: 600
+		letter-spacing: 0.04em
+	.registration-content
+		background: #fff
+		padding: 60px 180px 35px
+		width: 1000px
+		display: block
+		margin: auto
+		box-sizing: border-box
+	input:not([type="radio"]), select
+		background: #f4f6f9
+		color: #30426b
+		font-size: 15px
+		border-radius: 5px
+		border: none
+		padding: 0 25px
+		box-sizing: border-box
+		height: 45px
+
+		+transition(0.45s)
+		// margin-bottom: 20px
+		+placeholder
+			color: #30426b
+
+			font-size: 15px
+			+opacity(0.5)
+			+transition(0.45s)
+		&:focus
+			background: #f1f3f5
+			+placeholder
+				+opacity(0)
+	input:not([type="radio"])
+		width: 400px
+
+	input[type="submit"]
+		background: #d62738
+		color: #fff
+		cursor: pointer
+		float: right
+		width: 290px
+		&:hover
+			background: #bd1c2c
+	.gender
+		display: inline-block
+		vertical-align: middle
+		label
+			display: inline-block
+			vertical-align: middle
+			margin-right: 85px
+			margin-bottom: 0
+			input
+				display: none
+				&:checked+span
+					color: #30426b
+			span
+				color: #a3aaba
+				&>p 
+					margin-left: 25px
+
+	.po-edit-date
+		display: inline-block
+		vertical-align: middle
+		width: 398px
+		margin-left: -3px
+		+pie-clearfix
+		select 
+			width: 100%
+			margin-bottom: 0
+	.day
+		margin-right: 20px
+		width: 90px
+	.month
+		margin-right: 20px
+		width: 168px
+	.year
+		width: 100px
+	.country
+		width: 180px
+		margin-right: 4px
+		display: inline-block
+		margin-left: -3px
+
+	.country-city
+		width: 210px !important
+		display: inline-block !important
+	.telephone
+		display: inline-block
+		vertical-align: middle
+		margin-left: -3px
+		.phone
+			width: 100px
+			margin-right: 9px
+		input
+			width: 285px
+	.check 
+		font-size: 15px
+		line-height: 15px
+		color: #665757
+		// margin-bottom: 20px
+		// float: right
+		// width: 100%
+		// clear: both
+		margin-top: 9px
+		margin-bottom: 0
+		float: left
+		input
+			width: 21px
+			height: 21px
+		>.checkbox
+			width: 21px
+			height: 21px
+			background: url(../img/checkbox.png) no-repeat
+			display: inline-block
+			vertical-align: middle
+		> input
+			position: absolute
+			opacity: 0
+		> span
+			display: inline-block
+			vertical-align: bottom
+			margin-left: 12px
+			color: #665757
+		input:checked + .checkbox
+			background-position: -24px 0
+		input:checked ~ span
+			color: #da2828
+	.club
+		margin-left: -3px
+		width: 280px !important
+		margin-right: 14px
+		display: inline-block
+		vertical-align: middle
+	.size 
+		width: 100px
+		display: inline-block
+		vertical-align: middle
+		select 
+			margin-bottom: 0
+	.condition
+		display: block
+		+pie-clearfix
+		background: #f9fcff
+		width: 1000px
+		margin: auto
+		padding: 40px 180px
+		box-sizing: border-box
+// .registration

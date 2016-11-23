@@ -1,0 +1,198 @@
+.edit-distans
+	.back-to-edit
+		color: #d62738
+		font-size: 16px
+		line-height: 16px
+		display: inline-block
+		margin: 00px 0 35px
+		padding-left: 50px
+		&:hover
+			color: #c41626
+		img 
+			margin-right: 15px
+	.edit-distans-container
+		background: #fff
+		font-size: 0
+		line-height: 0px
+		margin-bottom: 50px
+		padding-bottom: 20px
+		&>div
+			padding: 30px 150px 30px 50px
+			box-sizing: border-box
+			border-bottom: 1px solid rgba(#e5e7e9, 0.75)
+			&:last-child
+				border-bottom: 1px solid transparent
+
+		h3
+			color: #000
+			font-size: 18px
+			line-height: 22px
+			display: block
+			padding-top: 20px
+			padding-bottom: 40px
+			font-weight: 600
+		h4
+			font-size: 16px
+			color: #171b25
+			line-height: 20px
+			display: block
+			font-weight: 600
+			padding-bottom: 40px
+		a 
+			color: #fff 
+			font-size: 13px
+			line-height: 13px
+			display: inline-block
+			margin-right: 20px
+			background: #546894
+			padding: 13px 30px 12px
+			+border-radius(5px)
+			margin-top: 25px
+			&:hover
+				background: #415683
+			img 
+				display: inline-block
+				vertical-align: bottom
+				margin-right: 20px
+	.reg-title
+		color: #171b25
+		font-size: 14px
+		line-height: 22px
+		display: block
+		padding-left: 20px
+		padding-bottom: 8px
+	input:not([type="radio"]), select, textarea
+		background: #f4f6f9
+		color: #30426b
+		font-size: 15px
+		border-radius: 5px
+		border: none
+		padding: 10px 25px
+		box-sizing: border-box
+		height: 45px
+		margin-bottom: 0
+		width: 100%
+		+transition(0.45s)
+		// margin-bottom: 20px
+		+placeholder
+			color: #30426b
+
+			font-size: 15px
+			+opacity(0.5)
+			+transition(0.45s)
+		&:focus
+			background: #f1f3f5
+			+placeholder
+				+opacity(0)
+	// input:not([type="radio"])
+	// 	width: 400px
+
+	input[type="submit"]
+		background: #d62738
+		color: #fff
+		cursor: pointer
+		display: block
+		width: 220px
+		margin-left: 0
+		margin-top: 60px
+		&:hover
+			background: #bd1c2c
+		&:focus
+			background: #bd1c2c
+	textarea
+		font-family: $os
+		resize: none
+		display: block
+		min-height: 150px
+	label
+		display: inline-block
+		font-size: 13px
+		color: #171b25
+		line-height: 15px
+	.gender
+		display: inline-block
+		vertical-align: middle
+		font-size: 13px
+		line-height: 15px
+		label
+			display: inline-block
+			vertical-align: middle
+			margin-right: 135px
+			margin-bottom: 0
+			input
+				display: none
+				&:checked+span
+					color: #30426b
+			span
+				color: #a3aaba
+				&>p 
+					margin-left: 25px
+					width: 130px
+	.l1
+		display: inline-block
+		width: 430px
+		margin-right: 20px
+	.l2
+		display: inline-block
+		width: 530px
+	.l3
+		width: 100%
+	.l4
+		width: 230px
+		margin-right: 50px
+	.l5
+		width: 380px
+		input
+			width: 160px
+		p 
+			font-size: 15px
+			line-height: 15px
+			display: inline-block
+			margin: 0 22px
+	.l6
+		width: 200px
+		margin-right: 70px
+		input
+			+transition(0s)
+			width: 180px
+			background-image: url("../img/calendar1.png")
+			background-position: 146px center
+			background-repeat: no-repeat
+			+placeholder
+				+opacity(0.5)
+	.l7
+		margin-left: -15px
+		margin-right: 50px
+	.l8
+		width: 200px
+		margin-right: 50px
+	.l9
+		.reg-title
+			display: inline-block
+		input
+			width: 180px
+			margin-left: 30px
+			+transition(0s)
+			background-image: url("../img/calendar1.png")
+			background-position: 146px center
+			background-repeat: no-repeat
+			+placeholder
+				+opacity(0.5)
+	.l10
+		display: block
+		margin-bottom: 26px
+		select
+			width: 200px
+	.l11
+		width: 245px
+		margin-left: 45px
+		padding-bottom: 15px
+	.l12
+		width: 375px
+		margin-right: 20px
+	.l13
+		width: 245px
+	.distans-last
+		background: #fcfdff
+	.border-n
+		border-bottom: none

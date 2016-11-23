@@ -1,0 +1,303 @@
+.news
+	margin-top: 40px
+	h3 
+		font-size: 30px
+		color: #31446b
+		display: inline-block
+		margin-top: 2px
+		padding-left: 33px
+	.select
+		float: right
+		margin-right: 10px
+		select
+			background: #fff
+			color: #30426b
+			font-size: 15px
+			width: 270px
+	.search
+		width: 370px
+		input 
+			padding-left: 55px
+			height: 45px
+			background: #fff !important
+			color: #a3aaba
+			&:focus
+				background: #fff !important
+		.search-submit
+			right: auto
+			left: 0
+			width: 45px
+			&:before
+				color: #a3aaba
+				left: 24px
+				top: 14px
+			input
+				width: 45px
+	.news-category
+		+pie-clearfix
+		float: right
+	.news-container
+		+pie-clearfix
+		margin-left: -20/1200*100%
+		margin-top: 45px
+		margin-bottom: 35px
+	.news-item
+		margin-left: 20/1200*100%
+		width: 380/1200*100%
+		float: left
+		margin-bottom: 20px
+		&:hover
+			.news-item-title
+				color: #d62738
+			.news-item-img
+				&:before
+					+opacity(1)
+				.plus
+					+opacity(1)
+	.news-item-img
+		width: 100%
+		height: 195px
+		overflow: hidden
+		position: relative
+		text-align: center
+		
+		.plus
+			position: absolute
+			top: 50%
+			+opacity(0)
+			+transition(0.5s)
+			margin: -42.5px auto 0px
+			display: block
+			+border-radius(100%)
+			right: 0
+			left: 0
+			z-index: 2
+			height: 85px
+			width: 85px
+			background: rgba(#fff, 0.4)
+			&:before
+				+font-icon("plus")
+				font-size: 46px
+				color: #fff
+				display: inline-block
+				vertical-align: middle
+			&:after
+				content: ""
+				display: inline-block
+				vertical-align: middle
+				height: 100%
+				width: 0
+
+		&:before
+			content: ""
+			position: absolute
+			bottom: 0
+			top: 0
+			left: 0
+			right: 0
+			background: rgba(#d62738, 0.3)
+			z-index: 1
+			+opacity(0)
+			+transition(0.3s)
+		img 
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.news-item-text
+		padding: 30px 34px 27px
+		box-sizing: border-box
+		height: 200px
+		background: #fff
+	.news-item-title
+		color: #30426b
+		font-size: 18px
+		line-height: 20px
+		margin-bottom: 10px
+		overflow: hidden
+		font-weight: bold
+		width: 100%
+		white-space: nowrap
+		text-overflow: ellipsis
+	.date
+		font-size: 12px
+		color: #868ea0
+		line-height: 15px
+		margin-bottom: 25px
+		display: block
+	.text
+		font-size: 13px
+		color: #292d35
+		line-height: 20px
+		max-height: 76px
+		overflow: hidden
+	.more
+		background: #d62738
+		color: #fff 
+		font-size: 15px
+		line-height: 20px
+		width: 220px
+		display: block
+		margin: 60px auto 40px
+		clear: both
+		text-align: center
+		+border-radius(5px)
+		padding: 8px 0 6px
+		&:before
+			+font-icon("reload")
+			font-size: 17px
+			display: inline-block
+			vertical-align: middle
+			margin-right: 25px
+		&:hover
+			background: #ae1827
+		&:active
+			background: #a40414
+
+
+.popup-enter
+	.bottom 
+		padding-bottom: 0
+	.top
+		h4
+			margin-bottom: 0
+	h5 
+		margin-bottom: 20px
+		font-size: 16px
+		color: #0f182c
+		line-height: 20px
+	.close
+		top: 41px
+	input
+		font-size: 15px
+		width: 100%
+		display: block
+		color: #a3aaba
+		line-height: 16px
+		background: #f4f6f9
+		+transition(0.3s)
+		height: 45px
+		border: none
+		border-radius: 5px
+		padding: 0px 20px
+		box-sizing: border-box
+		margin-bottom: 10px
+		+placeholder
+			font-size: 15px
+			color: #a3aaba
+			line-height: 16px
+			+transition(0.3s)
+		&:focus
+			background: #e9ebed
+			+placeholder
+				+opacity(0)
+	input[type="submit"]
+		background: #d62738
+		color: #fff
+		font-size: 16px
+		width: 120px
+		float: left
+		margin-bottom: 0
+		cursor: pointer 
+		&:hover
+			background: #ba1b2a
+		&:active
+			background: #a91422
+	.check
+		float: none
+		display: block
+		margin-bottom: 25px
+		color: #30426b
+	.popup-enter-l
+		float: left
+		width: 335px
+		padding: 35px 35px 26px
+		box-sizing: border-box
+		height: 307px
+	.popup-enter-r
+		float: right
+		width: 285px
+		padding: 35px 35px 26px
+		box-sizing: border-box
+		background: #f9fcff
+		height: 307px
+	.close-popup-enter
+		font-size: 14px
+		color: #30426b
+		float: right
+		margin: 14px 25px
+		&:hover
+			color: #000
+	.socials
+		margin-top: 0
+		margin-left: -5px
+		position: relative
+		padding-bottom: 30px
+		margin-bottom: 30px
+		&:after
+			content: ""
+			height: 1px
+			background: #edf2f7
+			width: 100%
+			position: absolute
+			width: 285px
+			bottom: 0px
+			left: -30px
+		a 
+			width: 103px
+			margin-left: 5px
+			+border-radius(3px)
+			height: 40px
+			margin-right: 0
+			margin-bottom: 5px
+			font-size: 13px
+			color: #fff
+			padding: 10px 0 8px
+			box-sizing: border-box
+			&:before
+				margin-right: 10px
+				font-size: 19px
+				vertical-align: sub
+	.reg
+		color: #cf1822
+		border-bottom: 1px dotted #cf1822
+		margin-bottom: 18px
+		display: inline-block
+		&:hover
+			border-bottom: 1px dotted transparent
+// .rigstration-popup
+// 	+opacity(0)
+// 	max-height: 0
+// 	overflow: hidden
+.rigstration-popup-open
+	.enter-PO
+		+opacity(1)
+		max-height: 3000px
+
+.close-popup
+	position: absolute
+	top: 0px
+	bottom: 0px
+	left: 0px
+	right: 0px
+
+
+.restore-password
+	width: 620px
+	.top 
+		padding-top: 30px
+	.popup-enter-l
+		height: auto
+		input[type="email"]
+			margin-bottom: 25px
+		input[type="submit"]
+			width: 145px
+	.popup-enter-r
+		height: auto
+		color: #697887
+		font-size: 13px
+		line-height: 19px
+		padding-top: 25px
+		.restore-password-img
+			display: block
+			text-align: center
+			padding-bottom: 13px

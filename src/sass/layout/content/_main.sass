@@ -1,0 +1,328 @@
+.main-banner
+	position: relative
+	height: 650px
+	overflow: hidden
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		background: rgba(#30426b, 0.45)
+		z-index: 1
+	&:after
+		content: ""
+		position: absolute
+		top: 76px
+		left: -5px
+		width: 376px
+		background: rgba(#d62738, 0.1)
+		height: 900px
+		transform: rotate(-45deg)
+	&>.wrapper
+		position: absolute
+		bottom: 0
+		right: 0
+		top: 0
+		left: 0
+		z-index: 2
+	input[type='text'], select
+		font-size: 14px
+		width: 100%
+		display: block
+		color: #ffffff
+		line-height: 16px
+		background-color: rgba(#fff, 0.15)
+		+transition(0.3s)
+		height: 45px
+		border: none
+		border-radius: 5px
+		padding: 0px 20px
+		box-sizing: border-box
+		// margin-bottom: 25px
+		margin-right: 20px
+		width: 250px
+		float: left
+		+placeholder
+			font-size: 14px
+			color: #ffffff
+			line-height: 16px
+			+transition(0.3s)
+		&:focus
+			background-color: rgba(#fff, 0.25)
+			+placeholder
+				+opacity(0)
+	input[type='submit']
+		background: #d62738
+		color: #ffffff
+		font-size: 16px
+		line-height: 16px
+		cursor: pointer
+		height: 45px
+		width: 220px
+		border-radius: 5px
+		border: none
+		float: left
+		+transition(0.3s)
+		&:hover
+			background: #ce1b2c
+	.select
+		width: 220px
+		float: left
+		margin-right: 20px
+		select 
+			width: 100%
+			margin-right: 0
+			margin-bottom: 0
+			option 
+				color: #000
+	.filter-date
+		input
+			width: 180px
+			background-image: url("../img/calendar.png")
+			background-position: 146px center
+			background-repeat: no-repeat
+			+placeholder
+				+opacity(0.5)
+.enter-main
+	background: transparent
+	border: 1px solid #fff
+	&:hover
+		background: #fff
+		color: #000
+.main-banner-img
+	position: absolute
+	bottom: 0
+	right: 0
+	top: 0
+	left: 0
+	img 
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.main-banner-container
+	bottom: 50px
+	left: 0
+	right: 0
+	position: absolute
+	background: rgba(#1d1d38, 0.5)
+	padding: 40px 45px
+	box-sizing: border-box
+
+.sportevent
+	overflow: hidden
+	position: relative
+	h4 
+		font-size: 40px
+		line-height: 60px
+.sporteven-container
+	background-color: #f8f9fb
+	background-image: url("../img/city.png")
+	background-repeat: no-repeat
+	background-position: bottom center
+.sporteven-container-item
+	width: 680px
+	padding-bottom: 65px
+	padding-top: 25px
+	// min-height: 625px
+	box-sizing: border-box
+	h3 
+		font-size: 40px
+		line-height: 44px
+		color: #d62738
+		padding: 50px 0
+		font-weight: bold
+		text-transform: uppercase
+		span 
+			color: #31446b
+	p
+		font-size: 15px
+		line-height: 22px
+		color: #172238
+		display: block
+		margin-bottom: 25px
+	.sportevent-man
+		position: absolute
+		right: 0
+		top: 111px
+		z-index: 4
+	.reg-member
+		padding-top: 65px
+		font-size: 16px
+		text-transform: uppercase
+		line-height: 16px
+		color: #fff
+		background: #d62738
+		padding: 16px 52px 14px
+		letter-spacing: 0.06em
+		display: inline-block
+		font-weight: 600
+		+border-radius(4px)
+		margin-right: 50px
+		margin-top: 35px
+		&:hover
+			background: #ce1b2c
+	.reg-organizer
+		font-size: 16px
+		text-transform: uppercase
+		line-height: 16px
+		color: #31446b
+		border-bottom: 1px dotted #31446b
+		display: inline-block
+		font-weight: 600
+		&:hover
+			border-bottom: 1px dotted transparent
+.sportevent-linear
+	background: #d62738
+	position: absolute
+	right: -330px
+	top: 0
+	transform: skew(45deg)
+	z-index: 3
+	width: 465px
+	height: 156%
+
+.all-marathon
+	padding: 64px 0
+	background: #31446b
+	.all-marathon-item
+		width: 280px
+		float: left
+		margin-left: 20px
+		text-align: center
+		background: #3b507b
+		color: #f8f9fb
+		height: 220px
+		h5 
+			font-weight: bold
+			font-size: 30px
+			line-height: 34px
+			margin-bottom: 15px
+			display: block
+		p
+			font-size: 18px
+			line-height: 20px
+			display: block
+			padding-bottom: 25px
+	.all-marathon-img
+		height: 130px
+		overflow: hidden
+		display: block
+		text-align: center
+		font-size: 0
+		&:before
+			content: ""
+			display: inline-block
+			vertical-align: middle
+			height: 100%
+			width: 0
+		img
+			display: inline-block
+			vertical-align: middle
+	.all-marathon-container
+		+pie-clearfix
+		margin-left: -20px
+
+
+.next-event
+	background: #f8f9fb
+	padding: 30px 0 80px
+	overflow: hidden
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		left: -165px
+		width: 300px
+		height: 400px
+		top: -75px
+		display: block
+		background: #d62738
+		transform: skew(-45deg)
+	&:before
+		content: ""
+		position: absolute
+		right: -150px
+		width: 300px
+		height: 400px
+		bottom: -160px
+		display: block
+		background: #d62738
+		transform: skew(-45deg)
+	h3 
+		text-transform: uppercase
+		font-size: 30px
+		line-height: 34px
+		color: #202e4b
+		display: block
+		text-align: center
+		padding: 50px 0px
+		font-weight: bold
+
+.next-event-container
+	margin-left: -20px
+	font-size: 0
+	line-height: 0
+	+pie-clearfix
+.next-event-item
+	width: 280px
+	text-align: center
+	float: left
+	margin-left: 20px
+.next-event-item-top
+	background: #fff
+	.top-img
+		height: 130px
+		&:after
+			content: ""
+			height: 100%
+			width: 0
+			display: inline-block
+			vertical-align: middle
+		img 
+			display: inline-block
+			vertical-align: middle
+	.top-title
+		font-size: 16px
+		line-height: 23px
+		color: #31446b
+		display: block
+		height: 70px
+		overflow: hidden
+		font-weight: 600
+		padding: 0 25px
+		box-sizing: border-box
+		&:after
+			content: ""
+			height: 100%
+			width: 0
+			display: inline-block
+			vertical-align: middle
+		p 
+			display: inline-block
+			vertical-align: middle
+.next-event-item-bottom
+	background: #eff2f7
+	.bottom-img
+		height: 70px
+		&:after
+			content: ""
+			height: 100%
+			width: 0
+			display: inline-block
+			vertical-align: middle
+		img 
+			display: inline-block
+			vertical-align: middle
+	.bottom-text
+		color: #2b3445
+		font-size: 14px
+		line-height: 16px
+		padding-bottom: 20px
+		span 
+			font-size: 20px
+			display: block
+			margin-top: 12px
+			font-weight: 600
